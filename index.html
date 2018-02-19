@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Simulador Consumo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script>
+            clic=1;
+            function confereCheckbox(element)
+            {
+                // element.checked = !element.checked;
+                 
+                var para = document.createElement("P");
+                var tt = document.createTextNode("clicado " + element.value +"total= " +clic);
+                para.appendChild(tt);
+                document.body.appendChild(para);
+                clic++;
+                
+            }
+        </script>
+    </head>
+    <body>
+        
+       <form action="seleciona.jsp" method="get">
+    <TABLE class="responsive-table" cellSpacing=1 width="100%">
+        <caption>Simulador Consumo de Energia</caption>
+  <thead>
+      <tr> 
+	<th scope="col">#</th>
+        <th scope="col">Equipamento</th>
+      </tr>
+  </thead>
+  <TR >    
+    <TH scope="row">0 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="0" onchange="confereCheckbox(this)">  Aquecedor de água por acumulação até 80 L</TH>
+  </TR>
+  <TR  >
+    <TH scope="row">1 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="1" onchange="confereCheckbox(this)">  Aquecedor de água por acumulação de 100 a 150 L</TH>
+   </TR>
+  <TR   >
+    <TH scope="row">2 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="2" onchange="confereCheckbox(this)">  Aquecedor de água por acumulação de 200 a 400 L</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">3 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="3" onchange="confereCheckbox(this)">  Aquecedor de água por tampa</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">4 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="4" onchange="confereCheckbox(this)">  Aquecedor de ambiente  </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">5 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="5" onchange="confereCheckbox(this)">  Aspirador de pó residencial </TH>
+   </TR>
+  <TR  >
+    <TH scope="row">6 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="6" onchange="confereCheckbox(this)">  Assadeira grande</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">7 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="7" onchange="confereCheckbox(this)">  Assadeira pequena</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">8 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="8" onchange="confereCheckbox(this)">  Banheira de hidromassagem</TH>
+   </TR>
+  <TR  >
+    <TH scope="row"> 9</TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="9" onchange="confereCheckbox(this)">  Batedeira de bolo</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">10 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="10" onchange="confereCheckbox(this)"> Bomba d´água 1/4 CV monofásica</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">11 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="11" onchange="confereCheckbox(this)"> Bomba d”água 1/3 CV monofásica</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">12 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="12" onchange="confereCheckbox(this)"> Bomba d”água 1/2 CV trifásica</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">13 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="13" onchange="confereCheckbox(this)"> Bomba d”água 3/4 CV trifásica</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">14 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="14" onchange="confereCheckbox(this)"> Bomba d”água 1 CV monofásica</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">15 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="15" onchange="confereCheckbox(this)"> Cafeteira elétrica pequena uso doméstico</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">16 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="16" onchange="confereCheckbox(this)"> Cafeteira elétrica uso comercial</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">17 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="17" onchange="confereCheckbox(this)"> Chuveiro elétrico 127V </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">18 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="18" onchange="confereCheckbox(this)"> Chuveiro elétrico 220V </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">19 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="19" onchange="confereCheckbox(this)"> Chuveiro 4 estações </TH>
+   </TR>
+  <TR  >
+    <TH scope="row">20 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="20" onchange="confereCheckbox(this)"> Conjunto de som </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">21 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="21" onchange="confereCheckbox(this)"> Ebulidor</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">22 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="22" onchange="confereCheckbox(this)"> Enceradeira residencial</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">23 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="23" onchange="confereCheckbox(this)"> Espremedor de frutas</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">24 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="24" onchange="confereCheckbox(this)"> Exaustor</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">25 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="25" onchange="confereCheckbox(this)"> Ferro elétrico automático de passar roupa</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">26 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="26" onchange="confereCheckbox(this)"> Ferro elétrico simples de passar roupa</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">27 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="27" onchange="confereCheckbox(this)"> Fogão comum com acendedor</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">28 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="28" onchange="confereCheckbox(this)"> Fogão elétrico de 4 bocas potência por cada queimador</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">29 </TH> 
+ <TH scope="row">
+<input type="checkbox" name="check" value="29" onchange="confereCheckbox(this)"> Fogão elétrico de 6 bocas potência por cada queimador médio </TH>
+    
+   </TR>
+  <TR  >
+    <TH scope="row">30 </TH> 
+ <TH scope="row">
+<input type="checkbox" name="check" value="30"> Fogão elétrico de 6 bocas potência por cada queimador grande</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">31 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="31" onchange="confereCheckbox(this)"> Forno de microondas</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">32 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="32" onchange="confereCheckbox(this)"> Forno elétrico de embutir</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">33 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="33" onchange="confereCheckbox(this)"> Freezer vertical Pequeno</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">34 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="34" onchange="confereCheckbox(this)"> Freezer horizontal médio</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">35 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="35" onchange="confereCheckbox(this)"> Freezer Horizontal Grande </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">36 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="36" onchange="confereCheckbox(this)"> Geladeira Comum</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">37 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="37" onchange="confereCheckbox(this)"> Geladeira Duplex</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">38 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="38" onchange="confereCheckbox(this)"> Grill</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">39 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="39" onchange="confereCheckbox(this)"> Impressora comum</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">40 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="40" onchange="confereCheckbox(this)"> Impressora laser</TH>
+   </TR>
+  <TR  >
+    <TH scope="row">41 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="41" onchange="confereCheckbox(this)"> Liquidificador doméstico</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">42 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="42" onchange="confereCheckbox(this)"> Lâmpada Incandescente de 15W </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">43 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="43" onchange="confereCheckbox(this)"> Lâmpada Incandescente de 20W  </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">44 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="44" onchange="confereCheckbox(this)"> Lâmpada Incandescente de 25W  </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">45 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="45" onchange="confereCheckbox(this)"> Lâmpada Incandescente de 40W</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">46 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="46" onchange="confereCheckbox(this)"> Lâmpada Incandescente de 60W  </TH>
+   </TR>
+  <TR  >
+    <TH scope="row">47 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="47" onchange="confereCheckbox(this)"> Lâmpada Incandescente de 100W </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">48 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="48" onchange="confereCheckbox(this)"> Lâmpada Incandescente de 150W </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">49 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="49" onchange="confereCheckbox(this)"> Lâmpada Incandescente de 200W  </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">50 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="50" onchange="confereCheckbox(this)"> Lâmpada Incandescente de 250W  </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">51 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="51" onchange="confereCheckbox(this)"> Lâmpada Incandescente</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">52 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="52" onchange="confereCheckbox(this)"> Lâmpada Fluorescente de 20W </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">53 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="53" onchange="confereCheckbox(this)"> Lâmpada Fluorescente de 40W </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">54 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="54" onchange="confereCheckbox(this)"> Lâmpada Fluorescente</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">55 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="55" onchange="confereCheckbox(this)"> Máquina de lavar louças</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">56 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="56" onchange="confereCheckbox(this)"> Máquina de lavar roupas com aquecimento </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">57 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="57" onchange="confereCheckbox(this)"> Máquina de secar roupas </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">58 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="58" onchange="confereCheckbox(this)"> Máquina para costurar</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">59 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="59" onchange="confereCheckbox(this)"> Máquina de lavar pratos </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">60 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="60" onchange="confereCheckbox(this)"> Máquina de lavar roupas </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">61 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="61" onchange="confereCheckbox(this)"> Máquina de xerox grande</TH>
+   </TR>
+  <TR  >
+    <TH scope="row">62 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="62" onchange="confereCheckbox(this)"> Máquina de xerox pequena</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">63 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="63" onchange="confereCheckbox(this)"> Micro computador</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">64 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="64" onchange="confereCheckbox(this)"> Micro forno elétrico</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">65 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="65" onchange="confereCheckbox(this)"> Panela elétrica</TH>
+   </TR>
+  <TR  >
+    <TH scope="row">66 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="66" onchange="confereCheckbox(this)"> Raio X (dentista)</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">67 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="67" onchange="confereCheckbox(this)"> Raio X (hospital)</TH>
+   </TR>
+  <TR  >
+    <TH scope="row">68 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="68" onchange="confereCheckbox(this)"> Refletor odontológico</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">69 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="69" onchange="confereCheckbox(this)"> Sanduicheira</TH>
+   </TR>
+  <TR  >
+    <TH scope="row">70 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="70" onchange="confereCheckbox(this)"> Sauna comercial</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">71 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="71" onchange="confereCheckbox(this)"> Sauna residencial</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">72 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="72" onchange="confereCheckbox(this)"> Scanner</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">73 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="73" onchange="confereCheckbox(this)"> Secador de cabelos grande  </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">74 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="74" onchange="confereCheckbox(this)"> Secador de cabelos pequeno</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">75 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="75" onchange="confereCheckbox(this)"> Secador de roupa comercial </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">76 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="76" onchange="confereCheckbox(this)"> Secador de roupa residencial</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">77 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="77" onchange="confereCheckbox(this)"> Televisor colorido</TH>
+   </TR>
+  <TR  >
+    <TH scope="row"> 78</TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="78" onchange="confereCheckbox(this)"> Televisor preto e branco</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">79 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="79" onchange="confereCheckbox(this)"> Torneira elétrica</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">80 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="80" onchange="confereCheckbox(this)"> Vaporizador</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">81 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="81" onchange="confereCheckbox(this)"> Ventilador grande</TH>
+    </TR>
+  <TR  >
+    <TH scope="row">82 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="82" onchange="confereCheckbox(this)"> Ventilador médio  <br></TH>
+    </TR>
+  <TR  >
+    <TH scope="row">83 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="83" onchange="confereCheckbox(this)"> Ventilador pequeno </TH>
+    </TR>
+  <TR  >
+    <TH scope="row">84 </TH> 
+ <TH scope="row"><input type="checkbox" name="check" value="84" onchange="confereCheckbox(this)"> Vídeo game</TH>
+    </TR></TBODY></TABLE>
+<input type="submit" value="Enviar">
+</form> 
+          
+    </body>
+</html>
